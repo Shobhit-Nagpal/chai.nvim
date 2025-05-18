@@ -1,5 +1,5 @@
-local chai_colors = require("chat.palette").colors
-local chai_themes = require("chat.palette").themes
+local chai_colors = require("chai.palette").colors
+local chai_themes = require("chai.palette").themes
 
 -- Alias for shorter commands
 local cmd = vim.cmd
