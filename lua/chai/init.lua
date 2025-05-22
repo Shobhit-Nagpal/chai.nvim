@@ -30,9 +30,11 @@ local M = {
 
 function M.setup(user_opts)
   user_opts = user_opts or {}
+
   opts = vim.tbl_extend("force", default_opts, user_opts)
-  chai_colors = vim.tbl_extends("force", chai_colors, opts.colors)
-  chai_themes = vim.tbl_extends("force", chai_themes, opts.themes)
+  chai_colors = vim.tbl_extend("force", chai_colors, opts.colors)
+  chai_themes = vim.tbl_extend("force", chai_themes, opts.themes)
+
 end
 
 function M.load()
@@ -42,8 +44,8 @@ function M.load()
   end
 
   -- checking if syntax highlighting is on, if it is then reset is
-  if fn.exists("syntax_on") then
-    cmd("syntax_reset")
+  if fn.exists("syntax on") then
+    cmd("syntax reset")
   end
 
   vim.g.colors_name = "chai"
@@ -133,7 +135,7 @@ function M.load()
   Color.new("Hint", chai_themes.hint)
 
   Group.new("Error", colors.Error)
-  Group.new("Warning", colors.Warning)
+  Group.new("Warn", colors.Warning)
   Group.new("Info", colors.Info)
   Group.new("Hint", colors.Hint)
 
