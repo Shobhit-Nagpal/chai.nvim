@@ -18,7 +18,7 @@ return function(_)
 
   Group.new("@punctuation", colors.punctuation)
   Group.link("@punctuation.delimiter", groups.Delimiter)
-  Group.new("@punctuation.bracket", colors.cyan)
+  Group.new("@punctuation.bracket", colors.yellow)
   Group.link("@punctuation.special", groups.Builtin)
 
   Group.link("@string", groups.String)
@@ -38,8 +38,8 @@ return function(_)
   Group.link("@function.builtin", groups.Function)
   Group.link("@function.macro", groups.Macro)
 
-  Group.link("@method", groups.Function)
-  Group.link("@method.call", groups.Function)
+  Group.new("@method", colors.blue)
+  Group.new("@method.call", colors.blue)
 
   Group.link("@constructor", groups.Function)
 
@@ -49,6 +49,10 @@ return function(_)
   Group.link("@keyword.function", groups.Operator)
   Group.link("@keyword.operator", groups.Operator)
   Group.link("@keyword.coroutine", groups.Operator)
+  Group.new("@keyword.import", colors.keyword, colors.none, styles.italic)
+  Group.new("@keyword.local", colors.keyword, colors.none, styles.italic)
+  Group.new("@keyword.export", colors.keyword, colors.none, styles.italic)
+  Group.new("@keyword.package", colors.keyword, colors.none, styles.italic)
 
   Group.link("@conditional", groups.Conditional)
   Group.link("@repeat", groups.Repeat)
