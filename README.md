@@ -1,10 +1,14 @@
+<div align="center">
+
 # chai.nvim
 
 Chai for Neovim: A warm, cozy theme for chill coding vibes.
 
 > This theme is a Neovim port of the [chai theme](https://marketplace.visualstudio.com/items?itemName=hiteshchoudharycode.chai-theme) for VSCode, created by Hitesh Choudhary sir. It primarily draws inspiration from the dark theme variant.
 
-![chai.nvim preview](https://raw.githubusercontent.com/Shobhit-Nagpal/chai.nvim/assets/preview.png)
+<img alt="chai.nvim preview" src="/assets/preview.png" />
+
+</div>
 
 ## Features
 
